@@ -31,4 +31,4 @@ A modern Android task management application built with Kotlin and Firebase.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/task-manager-app.git
+git clone https://github.com/poonammohod/TaskManagerApp
