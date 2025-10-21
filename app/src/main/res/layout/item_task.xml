@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/card_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Priority Indicator -->
+        <View
+            android:id="@+id/priorityIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/priority_medium"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Task Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Priority Badge -->
+            <TextView
+                android:id="@+id/tvPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="MEDIUM"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/priority_badge"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Task Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task description will appear here..."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Info Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Assigned To -->
+            <TextView
+                android:id="@+id/tvAssignedTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="👤 Assignee"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary" />
+
+            <!-- Due Date -->
+            <TextView
+                android:id="@+id/tvDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Jan 01, 2024"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <!-- Info Row 2 - Current Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Current Status -->
+            <TextView
+                android:id="@+id/tvCurrentStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⚪ Pending"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/status_pending" />
+
+        </LinearLayout>
+
+        <!-- Actions Row with Clear Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Spinner Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Status:"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="8px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Status Spinner -->
+                <Spinner
+                    android:id="@+id/spinnerStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/spinner_modern"
+                    android:popupBackground="@color/white" />
+
+                <!-- Delete Button -->
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:text="🗑️"
+                    android:textSize="16sp"
+                    android:background="@drawable/button_delete"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/cardView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="8dp"-->
+<!--    app:cardElevation="6dp"-->
+<!--    app:cardCornerRadius="16dp"-->
+<!--    app:cardBackgroundColor="@color/card_bg">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
+
+<!--        &lt;!&ndash; Priority Indicator &ndash;&gt;-->
+<!--        <View-->
+<!--            android:id="@+id/priorityIndicator"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="4dp"-->
+<!--            android:background="@color/priority_medium"-->
+<!--            android:layout_marginBottom="12dp" />-->
+
+<!--        &lt;!&ndash; Header Row &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            &lt;!&ndash; Task Title &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvTitle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Task Title"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/text_primary"-->
+<!--                android:maxLines="1"-->
+<!--                android:ellipsize="end" />-->
+
+<!--            &lt;!&ndash; Priority Badge &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvPriority"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:text="MEDIUM"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingEnd="8dp"-->
+<!--                android:background="@drawable/priority_badge"-->
+<!--                android:layout_marginStart="8dp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Task Description &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvDescription"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Task description will appear here..."-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/text_secondary"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:maxLines="2"-->
+<!--            android:ellipsize="end" />-->
+
+<!--        &lt;!&ndash; Info Row 1 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            &lt;!&ndash; Assigned To &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvAssignedTo"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="👤 Assignee"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/text_secondary" />-->
+
+<!--            &lt;!&ndash; Due Date &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDueDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="📅 Jan 01, 2024"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/text_secondary" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Info Row 2 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            &lt;!&ndash; Current Status &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvCurrentStatus"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Status: Pending"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/status_pending" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Actions Row &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            &lt;!&ndash; Status Spinner &ndash;&gt;-->
+<!--            <Spinner-->
+<!--                android:id="@+id/spinnerStatus"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:background="@drawable/spinner_modern"-->
+<!--                android:popupBackground="@color/gray" />-->
+
+<!--            &lt;!&ndash; Delete Button &ndash;&gt;-->
+<!--            <Button-->
+<!--                android:id="@+id/btnDelete"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:text="🗑️"-->
+<!--                android:textSize="16sp"-->
+<!--                android:background="@drawable/button_delete"-->
+<!--                android:padding="0dp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->

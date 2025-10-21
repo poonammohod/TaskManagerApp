@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "448721371505",
+    "firebase_url": "https://pk-projects-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pk-projects",
+    "storage_bucket": "pk-projects.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448721371505:android:a1088b8e336d084da476d0",
+        "android_client_info": {
+          "package_name": "com.pk.taskmanagerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbEAAQvJCFcwTFGPh9C1po9EzXuKcvwUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

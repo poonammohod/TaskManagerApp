@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Task Manager App</string>
+    <string name="team_task_manager">Team Task Manager</string>
+    <string name="create_new_task">Create New Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="assign_to">Assign To:</string>
+    <string name="priority">Priority:</string>
+    <string name="due_date">Due Date:</string>
+    <string name="select_due_date">Select Due Date</string>
+    <string name="create_task">Create Task</string>
+    <string name="delete">Delete</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="due">Due:</string>
+
+    <!-- New strings for login and task details -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="task_details">Task Details</string>
+    <string name="description">Description:</string>
+    <string name="created_by">Created by:</string>
+    <string name="created">Created:</string>
+    <string name="status">Status:</string>
+    <string name="update_task">Update Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="back_to_list">Back to List</string>
+    <string name="chage_status">chage status</string>
+</resources>
